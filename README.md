@@ -4,8 +4,6 @@ The rules I use to run many AI coding agents in parallel as a solo developer, ge
 
 The short version: you talk to one **orchestrator** per area of work. It hands each piece of work to its own **owner** agent, keeps them out of each other's way, and only brings you the decisions that are actually yours. GitHub issues and pull requests are how the agents keep track of everything.
 
-I wrote about how this came together in [Orchestrating a One-Person Software Factory](https://oskargroth.com/blog/orchestrating-agents).
-
 ## What's here
 
 | File | What it's for |
@@ -32,4 +30,4 @@ None of it depends on a particular model, but the orchestrator role needs a stro
 
 ## License
 
-MIT. Copy, change and use it however you like.
+MIT (see [LICENSE](LICENSE)). Copy, change and use it however you like.
