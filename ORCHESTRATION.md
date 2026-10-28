@@ -15,7 +15,7 @@
 
 - **One owner per outcome, not per repo.** An outcome is a result worth prioritizing and deciding on its own: a bug or feature that matters to users, a marketing goal, a piece of research or a prototype. Not a file, and not a ticket.
 - **Owners are visible sessions.** Each has a title that says what it is, with one purpose emoji in front (✨ feature, 🐛 bug, 🎨 design, 🔍 research or review, ⚙️ tooling, 📝 docs, 🧪 testing, 🚀 release, 🧭 orchestration).
-- **Attention markers** go before the purpose emoji: 🟢 ready for your decision, 🟡 needs an input from you with a known way forward, 🔴 stuck. At most one, and clear it when the condition ends.
+- **No status markers in titles.** Your harness already shows whether a thread is working, idle or waiting. Say what's needed in the conversation and on the issue instead.
 - **Each owner works in its own git worktree and branch,** so owners don't step on each other.
 - **The mandate.** When you approve an outcome, that approval covers whatever work it takes: investigation, architecture, tests, PRs and fixing what breaks afterwards. The owner doesn't come back to ask about each step. The mandate never covers the things in [When to ask the human](#when-to-ask-the-human).
 - **Own it to done.** A merged PR or a green test run isn't the finish line; the result you asked for is. Every open item is in exactly one of three states:

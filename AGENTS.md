@@ -31,7 +31,7 @@ Ask only about the list in [ORCHESTRATION.md › When to ask the human](ORCHESTR
 - [anything touching user data or payments];
 - [changes to this file].
 
-The owner presents those PRs in its own thread with a short plain-English summary, puts 🟢 in the thread title, and asks one question: approve and merge, or keep it unmerged.
+The owner presents those PRs in its own thread with a short plain-English summary and asks one question: approve and merge, or keep it unmerged.
 
 ## Reporting
 
