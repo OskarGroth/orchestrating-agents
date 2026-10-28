@@ -46,6 +46,9 @@ Reading every agent's conversation is slow, costly and out of date the moment it
 - **Independent review.** Every substantive PR is reviewed by an agent that didn't write it: a fresh subagent or another model, given the actual diff, the requirements and the evidence, with room to challenge the claim that it's done. Green CI or the builder's own summary isn't review. Findings are fixed, or rejected with evidence.
 - **The same for recommendations.** Before a recommendation reaches you, a fresh agent gets the data but not the conclusion and tries to reach its own. Disagreements are settled first.
 - **Merge clearance.** Anything shared goes through the orchestrator: merging to main, deploys, test machines, VMs. An owner with a reviewed PR asks for clearance; the orchestrator checks scope, conflicts with other owners' work and order, then clears **one exact commit**. The owner merges that commit and nothing else. A written clearance on the PR (commit SHA plus "cleared") is the record.
+- **Approve actions, not code.** Sensitive code (payments, licensing, release scripts, data migrations) merges through the same review and clearance as everything else. The action it enables, such as a release, a deploy or a schema change, still needs the human's yes.
+- **Explain security fixes.** When a security PR merges, the human gets a plain-language note: what it protects against, what changes for users, how it was verified, and what risk remains.
+- **A daily list of what merged** goes to the human, with any borderline calls flagged.
 - **Clearance isn't a second review.** The reviewer already checked the code. That keeps the orchestrator fast and keeps quality with the agents closest to the code.
 - **Time limits on shared things.** Whoever holds a deploy slot or a shared machine posts progress at least every 30 minutes. After an hour without an update, the waiting agent pings once, then releases it.
 
@@ -68,7 +71,7 @@ How to ask:
 
 - **One recommendation, never a menu.** A yes-or-no question with your pick, what a yes does, and why, in at most three plain sentences.
 - **Batch asks** into one numbered message.
-- **One yes covers the plan.** Ask again only for something new from the list above, a higher cost, or a step that wasn't in the plan. Releases to customers, credentials, customer messages and deletions always need their own yes.
+- **One yes covers the plan.** Ask again only for something new from the list above, a higher cost, or a step that wasn't in the plan. Releases to customers, credentials, customer messages and deletions always need their own yes. A yes on a rule also covers the PR that writes it down.
 - **A no stays a no.** Never route around a refusal or a declined permission.
 - **End every message to the human with "Needs you: …"** or "Needs you: nothing".
 - **Try it yourself first.** Hand the human only the steps that need their own hands, as one paste-ready block.
