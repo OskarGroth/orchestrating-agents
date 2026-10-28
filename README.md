@@ -24,7 +24,7 @@ I wrote about how this came together in [Orchestrating a One-Person Software Fac
 
 ## Assumptions
 
-- Each agent runs in its own session that you can see, and sessions can message each other. I use Claude Code, where an orchestrator can start owner sessions and message them directly.
+- Each agent runs in its own session that you can see, and sessions can message each other. I use Claude Code, where sessions can message each other directly. Starting a new owner session still takes a person.
 - Every repo is on GitHub, with issues and pull requests turned on.
 - Agents can create git worktrees, so several of them can work in the same repo at once.
 
